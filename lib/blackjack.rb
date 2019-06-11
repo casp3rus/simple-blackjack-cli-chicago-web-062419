@@ -30,14 +30,6 @@ end
 
 def hit?
   prompt_user
-  user_input = get_user_input
-  if user_input == "s"
-    return initial_round
-  elsif user_input == "h"
-    return initial_round += deal_card
-  else
-    invalid_command
-  end
 end
 
 def invalid_command
