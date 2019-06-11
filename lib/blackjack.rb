@@ -33,10 +33,8 @@ def hit?
   user_input = get_user_input
   if user_input == "s"
     return initial_round
-    puts "#{initial_round}"
   elsif user_input == "h"
     return initial_round += deal_card
-    puts "#{initial_round}"
   else
     invalid_command
   end
